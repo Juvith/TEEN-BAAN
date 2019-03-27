@@ -1,0 +1,10 @@
+map = robotics.BinaryOccupancyGrid(20,20,15);
+xy = [5 5; 4.3 4.4; 5.6 5.3];
+setOccupancy(map,xy,1);
+show(map);
+hold on
+plot(xy(:,1),xy(:,2),'xr','MarkerSize', 20)
+grid on
+set(gca,'XTick',0:0.2:10,'YTick',0:0.2:10)
+xlim([4 6])
+ylim([4 6])
